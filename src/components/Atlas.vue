@@ -16,23 +16,23 @@
           <div class="text-center max-w-2xl mx-auto px-6">
             <!-- Logo/Icon -->
             <div class="mb-8">
-              <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2 leading-tight">Holy SHIT</h1>
-              <p class="text-neutral-400 text-lg">AI is going to take over the fuckin' world.</p>
+              <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2 leading-tight">Atlas AI</h1>
+              <p class="text-neutral-400 text-lg">Chatbot for calculations</p>
             </div>
             <div class="space-y-4">
               <p class="text-neutral-300 text-md">Start by asking me anything, for example:</p>
               <div class="flex flex-wrap justify-center gap-3">
                 <button @click="startWithQuestion('What is quantum entanglement?')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
-                  What is quantum entanglement?
+                  Graph the collatz conjecture, n = 50
                 </button>
                 <button @click="startWithQuestion('Explain React Hooks with an example.')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
-                  Explain React Hooks with an example.
+                  Calculate the integral of x^2 from 0 to 10.
                 </button>
                 <button @click="startWithQuestion('Show me an example image.')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
-                  Show me an example image.
+                  Create a pie chart of market share for 2023.
                 </button>
               </div>
             </div>
@@ -97,11 +97,11 @@
 
         <div class="h-[32px] w-full text-neutral-200 flex justify-between items-center px-3 pb-2">
           <!-- Placeholder for future functionality like attachment -->
-          <div class="cursor-pointer hover:text-white transition-colors duration-200 opacity-50" title="Coming soon">
+          <!-- <div class="cursor-pointer hover:text-white transition-colors duration-200 opacity-50" title="Coming soon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
             </svg>
-          </div>
+          </div> -->
           <button
             class="transition-all duration-200 cursor-pointer"
             :class="inputText.trim().length > 0 && !isLoading ? 'opacity-100 text-blue-400 hover:text-blue-300' : 'opacity-30 cursor-not-allowed'"
@@ -154,7 +154,7 @@ export default {
     if (this.$refs.inputRef) {
       this.$refs.inputRef.focus();
     }
-    this.loadPreviousMessages();
+    // this.loadPreviousMessages();
   },
 
   watch: {
