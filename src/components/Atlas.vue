@@ -142,7 +142,7 @@ export default {
       inputText: "",
       isLoading: false,
       errorMessage: null,
-      backendUrl: "https://atlasai.up.railway.app",
+      backendUrl: "https://atlasai.up.railway.app/api",
       s3BaseUrl: "https://atlas07072025.s3.amazonaws.com/Images/",
       currentStatusMessage: '' // New data property for status messages
     };
