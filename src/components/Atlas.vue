@@ -22,15 +22,15 @@
             <div class="space-y-4">
               <p class="text-neutral-300 text-md">Start by asking me anything, for example:</p>
               <div class="flex flex-wrap justify-center gap-3">
-                <button @click="startWithQuestion('What is quantum entanglement?')"
+                <button @click="startWithQuestion('Graph the collatz conjecture, n = 50')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
                   Graph the collatz conjecture, n = 50
                 </button>
-                <button @click="startWithQuestion('Explain React Hooks with an example.')"
+                <button @click="startWithQuestion('Calculate the integral of x^2 from 0 to 10.')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
                   Calculate the integral of x^2 from 0 to 10.
                 </button>
-                <button @click="startWithQuestion('Show me an example image.')"
+                <button @click="startWithQuestion('Create a pie chart of market share for 2023.')"
                         class="px-4 py-2 bg-neutral-800 text-neutral-200 rounded-lg hover:bg-neutral-700 transition-colors duration-200 text-sm shadow-md">
                   Create a pie chart of market share for 2023.
                 </button>
