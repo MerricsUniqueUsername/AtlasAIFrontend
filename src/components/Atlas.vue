@@ -142,7 +142,7 @@ export default {
       inputText: "",
       isLoading: false,
       errorMessage: null,
-      backendUrl: "http://127.0.0.1:8000",
+      backendUrl: "https://atlasai.up.railway.app",
       s3BaseUrl: "https://atlas07072025.s3.amazonaws.com/Images/",
       currentStatusMessage: '' // New data property for status messages
     };
@@ -423,8 +423,6 @@ export default {
                 }
               } catch (e) {
                 console.warn('Error parsing stream chunk (may be expected for non-JSON lines):', e, 'Data:', data);
-                // Non-JSON data might be part of the stream (e.g., initial connection data, empty lines)
-                // We log it but don't treat it as a critical error that stops the chat.
               }
             }
           }

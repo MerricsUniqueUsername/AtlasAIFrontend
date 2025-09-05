@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="h-screen w-screen">
-      <Atlas chatId="020ea992-6582-43c3-b330-0a6c2e20bf90" />
+      <Atlas chatId="6765f789-cbb0-4ed5-98a2-42ae431a6d31" />
     </div>
   </div>
 </template>
