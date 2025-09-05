@@ -148,6 +148,7 @@ export default {
     };
   },
 
+  
   mounted() {
     this.setupMarkdown();
     if (this.$refs.inputRef) {
