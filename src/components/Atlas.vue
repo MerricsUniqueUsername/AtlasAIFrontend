@@ -97,11 +97,11 @@
 
         <div class="h-[32px] w-full text-neutral-200 flex justify-between items-center px-3 pb-2">
           <!-- Placeholder for future functionality like attachment -->
-          <!-- <div class="cursor-pointer hover:text-white transition-colors duration-200 opacity-50" title="Coming soon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <div class="cursor-pointer hover:text-white transition-colors duration-200 opacity-50" title="Coming soon">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-            </svg>
-          </div> -->
+            </svg> -->
+          </div>
           <button
             class="transition-all duration-200 cursor-pointer"
             :class="inputText.trim().length > 0 && !isLoading ? 'opacity-100 text-blue-400 hover:text-blue-300' : 'opacity-30 cursor-not-allowed'"
